@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1b1b1b;
+    /* Arrière-plan sombre */
+    color: #ffffff;
+    /* Texte clair */
+}
+
+header {
+    background: linear-gradient(135deg, #ffcc00, #ff9933);
+    /* Dégradé de couleur */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    /* Augmentation de la taille du titre */
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1b1b1b;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* Animation de couleur */
+}
+
+nav ul li a:hover {
+    color: #ff9933;
+    /* Changement de couleur au survol */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #ffcc00;
+    border-bottom: 2px solid #ff9933;
+    /* Soulignement */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.1);
+    /* Fond semi-transparent */
+    border-radius: 8px;
+    /* Coins arrondis */
+    padding: 15px;
+    margin-bottom: 20px;
+    /* Espacement entre les sections */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Ombre */
+}
+
+ul {
+    list-style-type: none;
+    /* Suppression des puces */
+}
+
+ul li {
+    margin: 10px 0;
+    /* Espacement entre les éléments de la liste */
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: underline;
+    /* Soulignement pour les liens */
+}
+
+a:hover {
+    color: #ff9933;
+    /* Changement de couleur au survol */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+        /* Réduire la taille du titre sur mobile */
+    }
+
+    nav ul li {
+        margin: 0 10px;
+        /* Espacement réduit sur mobile */
+    }
+}
+
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-button {
+    background: #ffcc00;
+    /* Couleur de fond */
+    color: #1b1b1b;
+    /* Couleur du texte */
+    padding: 15px 25px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    /* Coins arrondis */
+    transition: background 0.3s ease, transform 0.3s ease;
+    /* Animation */
+}
+
+.download-button:hover {
+    background: #ff9933;
+    /* Changement de couleur au survol */
+    transform: scale(1.05);
+    /* Effet de zoom au survol */
+}
